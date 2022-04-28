@@ -3,16 +3,8 @@ import list from "./../data"
 import Card from "./../components/Card"
 import "./../Styles/Amazon.css"
 
-const Amazon = () => {
-  const [cart, setCart] = useState([])
-
-  const handleClick = (item) => {
-    setCart([...cart, item])
-
-    console.log(cart)
-  }
-
-
+const Amazon = ({handleClick}) => {
+  
   return (
     <section>
         {list.map((item) => (
